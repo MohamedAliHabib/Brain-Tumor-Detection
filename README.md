@@ -80,7 +80,7 @@ The best validation accuracy was achieved on the 23rd iteration.
 Now, the best model (the one with the best validation accuracy) detects brain tumor with:<br>
 
 **88.7%** accuracy on the **test set**.<br>
-**88.2%** f1 score on the **test set**.<br>
+**0.88** f1 score on the **test set**.<br>
 These resutls are very good considering that the data is balanced.
 
 **Performance table of the best model:**
@@ -88,7 +88,7 @@ These resutls are very good considering that the data is balanced.
 | <!-- -->  | Validation set | Test set |
 | --------- | -------------- | -------- |
 | Accuracy  | 91%            | 89%      |
-| F1 score  | 91%            | 88%      |
+| F1 score  | 0.91           | 0.88     |
 
 
 # Final Notes
