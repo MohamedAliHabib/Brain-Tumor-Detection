@@ -99,8 +99,10 @@ What's in the files?
 2. The weights for all the models. The best model is named as 'cnn-parameters-improvement-23-0.91.model'.
 3. The models as *.model* files. They can be restored as follows:
 <br>
-`from tensorflow.keras.models import load_model`<br>
-`model = load_model('my_model.model')`
+```
+from tensorflow.keras.models import load_model
+best_model = load_model(filepath='models/cnn-parameters-improvement-23-0.91.model')
+```
 4. The original data in the folders named 'yes' and 'no'. And, the augmented data in the folder named 'augmented data'.
 
 
