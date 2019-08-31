@@ -29,8 +29,8 @@ After data augmentation, now the dataset consists of:<br>
 
 For every image, the following preprocessing steps were applied:
 
-1. Crop the part of the image that contains only the brain (which is most important part of the image).
-2. Resize the image to have a shape of (240, 240, 3)=(image_width, image_height, number of channels): because images in the dataset come in different sizes. So, all images should have same shape to feed it as an input to the neural network.
+1. Crop the part of the image that contains only the brain (which is the most important part of the image).
+2. Resize the image to have a shape of (240, 240, 3)=(image_width, image_height, number of channels): because images in the dataset come in different sizes. So, all images should have the same shape to feed it as an input to the neural network.
 3. Apply normalization: to scale pixel values to the range 0-1.
 
 ## Data Split:
@@ -60,7 +60,7 @@ Each input x (image) has a shape of (240, 240, 3) and is fed into the neural net
 
 **Why this architecture?**<br>
 
-Firstly, I applied transfer learning using a ResNet50 and vgg-16, but these models were too complex to the data size and was overfitting. Of course, you may get good results applying transfer learning with these models using data augmentation. But, I'm using training on a computer with 6th generation Intel i7 CPU and 8 GB memory. So, I had to take into consideration computational complexity and memory limitations.<br>
+Firstly, I applied transfer learning using a ResNet50 and vgg-16, but these models were too complex to the data size and were overfitting. Of course, you may get good results applying transfer learning with these models using data augmentation. But, I'm using training on a computer with 6th generation Intel i7 CPU and 8 GB memory. So, I had to take into consideration computational complexity and memory limitations.<br>
 
 So why not try a simpler architecture and train it from scratch. And it worked :)
 
